@@ -1,0 +1,125 @@
+.leaderboard-container {
+    animation: leaderboardFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    padding-bottom: 100px;
+}
+
+.leaderboard-header-info {
+    margin-bottom: 30px;
+}
+
+.leaderboard-header-info h2 {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.leaderboard-header-info .highlight {
+    color: #00ff88;
+}
+
+.leaderboard-header-info p {
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-spacing: 0 8px;
+    border-collapse: separate;
+    background: transparent !important;
+}
+
+.leaderboard-table tr {
+    background: rgba(255, 255, 255, 0.02);
+    transition: 0.2s;
+}
+
+.leaderboard-table tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: scale(1.005);
+}
+
+.leaderboard-table td {
+    padding: 16px;
+    border: none;
+}
+
+.leaderboard-table tr.ucl-zone {
+    border-left: 4px solid #3b82f6;
+    background: linear-gradient(90deg, rgba(59, 130, 246, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+}
+
+.leaderboard-table tr.relegation-zone {
+    border-left: 4px solid #ef4444;
+}
+
+.rank-number {
+    font-weight: 900;
+    color: #475569;
+}
+
+.team-info-wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.team-info-wrap img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.current-pts-val {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.projection-pill {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 900;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.projection-pill.winner {
+    background: rgba(0, 255, 136, 0.1);
+    color: #00ff88;
+    border-color: #00ff88;
+}
+
+.odds-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.prob-pct {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #00ff88;
+}
+
+.trend-tag {
+    font-size: 10px;
+    font-weight: 800;
+    margin-top: 2px;
+}
+
+.trend-tag.up { color: #00ff88; }
+.trend-tag.down { color: #ef4444; }
+
+@keyframes leaderboardFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
