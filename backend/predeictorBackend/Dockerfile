@@ -1,16 +1,14 @@
 
-FROM maven:3.9.6-eclipse-temurin-17 AS build
+FROM maven:3.9.6-eclipse-temurin-21 AS build
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
-# Package the application (skip tests to speed up build)
 RUN mvn clean package -DskipTests
 
-FROM eclipse-temurin:17-jdk-jammy
+FROM eclipse-temurin:21-jdk-jammy
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
-
-
+# Explicitly copy the CSV data so it is available in the container file system
 COPY src/main/resources/data/2526ALL.csv /app/data/2526ALL.csv
 
 EXPOSE 8080
