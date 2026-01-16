@@ -118,10 +118,10 @@ public class AuthService {
     public ResponseCookie generateRefreshCookie(String refreshToken) {
         return ResponseCookie.from("refreshToken", refreshToken)
                 .httpOnly(true)
-                .secure(false)
+                .secure(true)
                 .path("/")
                 .maxAge(jwtRefreshExpirationMs / 1000)
-                .sameSite("Lax")
+                .sameSite("None")
                 .build();
     }
 
@@ -248,7 +248,8 @@ public class AuthService {
                 .path("/")
                 .maxAge(0)
                 .httpOnly(true)
-                .sameSite("Lax")
+                .secure(true)
+                .sameSite("None")
                 .build();
     }
 
