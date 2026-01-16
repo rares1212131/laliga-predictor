@@ -1,4 +1,4 @@
-# LaLiga AI Predictor - Full Stack Microservices System
+# Football AI Predictor - Full Stack Microservices System
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)
@@ -141,7 +141,7 @@ docker-compose up --build
 
 **Rares Palade**
 
-- [LinkedIn Profile](YOUR_LINKEDIN_URL)
+- https://www.linkedin.com/in/rares-palade-140b311ba/(YOUR_LINKEDIN_URL)
 - rrspld@gmail.com
 
 ---
