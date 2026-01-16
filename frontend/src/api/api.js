@@ -41,9 +41,9 @@ api.interceptors.response.use(
         console.log('[API] 401 detected → Attempting token refresh');
         
         const refreshApi = axios.create({
-          baseURL: 'http://localhost:8080/api',
-          withCredentials: true
-        });
+  baseURL: baseURL, 
+  withCredentials: true
+});
         
         const { data } = await refreshApi.post('/auth/refresh-token', {});
         
