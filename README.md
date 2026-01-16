@@ -141,7 +141,7 @@ docker-compose up --build
 
 **Rares Palade**
 
-- https://www.linkedin.com/in/rares-palade-140b311ba/(YOUR_LINKEDIN_URL)
+- https://www.linkedin.com/in/rares-palade-140b311ba/
 - rrspld@gmail.com
 
 ---
